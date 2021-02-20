@@ -1,0 +1,33 @@
+<apex:page controller="CustomTable" showHeader="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!clist}" var="c">
+                    <apex:column headerValue="First Name">
+                        <apex:outputField value="{!c.First_Name__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Last Name">
+                        <apex:outputField value="{!c.Last_Name__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Email">
+                        <apex:outputField value="{!c.Email__c}"/>
+                    </apex:column>
+                    
+                    <apex:column headerValue="City">
+                        <apex:outputField value="{!c.City__c}"/>
+                    </apex:column>
+                    
+                    
+                
+                
+                </apex:pageBlockTable>
+            
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+  
+</apex:page>
